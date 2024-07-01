@@ -27,3 +27,22 @@ button{
 p{
     margin-right: 50%;
 }
+
+@media screen
+and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+        }
+        button{
+            margin: 5px;
+            background-color: orange;
+            border-radius: 10%;
+            }
+            p{
+                margin-right: 50%;
+                }
+                
+}
