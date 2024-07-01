@@ -9,7 +9,7 @@ body{
 }
 .form-group{
     margin-top: 20px;
-    border-color: orange ;
+    border-color: 2px  solid orange ;
     border-width: 2px;
 }
 input{
@@ -17,7 +17,7 @@ input{
     width: 50%;
     border: orange;
     border-radius: 5px;
-    border-color: orange ;
+    border-color: 2px  solid orange ;
 }
 button{
     margin: 5px;
