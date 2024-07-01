@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+}
+.container{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.form-group{
+    margin-top: 20px;
+}
+input{
+    margin: 10px;
+    width: 50%;
+    border: orange;
+    border-radius: 5px;
+}
+button{
+    margin: 5px;
+    background-color: orange;
+    border-radius: 10%;
+}
+p{
+    margin-right: 50%;
+}
