@@ -9,12 +9,15 @@ body{
 }
 .form-group{
     margin-top: 20px;
+    border-color: orange ;
+    border-width: 2px;
 }
 input{
-    margin: 10px;
+    margin-right: 10px;
     width: 50%;
     border: orange;
     border-radius: 5px;
+    border-color: orange ;
 }
 button{
     margin: 5px;
