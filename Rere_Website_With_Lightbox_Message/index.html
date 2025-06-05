@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
   <canvas id="stars-bg"></canvas>
   <div class="container">
     <h1 id="typewriter"></h1>
@@ -22,21 +24,45 @@
     <audio id="bg-music" src="https://cdn.pixabay.com/audio/2022/11/23/audio_e04c1f1512.mp3" loop></audio>
     <button class="music-btn" onclick="toggleMusic()">🎵 Toggle Music</button>
   </div>
-
-  <div class="message-section">
+  
+  <div class="message-section" id="messageSection" onclick="revealMessage()">
     <h2>My Message to You 💌</h2>
-    <p>LoveYou 3000 💖</p>
+    <p id="hiddenMessage" style="display:none;"> Love You 3000 💖 ps no hard feelings</p>
+    <span id="revealHint" style="font-size:1em; color:#fff; opacity:0.7;">Click to reveal</span>
   </div>
 
   <div class="gallery-section">
     <h2>Our Memories 📸</h2>
-    <div class="gallery">
-      <a href="assets/rere1.jpg" data-lightbox="gallery" data-title="Beautiful Rere"><img src="assets/rere1.jpg" alt="Rere 1" /></a>
-      <a href="assets/rere2.jpg" data-lightbox="gallery" data-title="Sweet Pose"><img src="assets/rere2.jpg" alt="Rere 2" /></a>
-      <a href="assets/rere3.jpg" data-lightbox="gallery" data-title="Us Together"><img src="assets/rere3.jpg" alt="Rere 3" /></a>
+    <div class="slideshow-container" id="slideshow">
+      <div class="slide fade">
+        <img src="assets/rere1.jpg" alt="Rere 1" />
+      </div>
+      <div class="slide fade">
+        <img src="assets/rere2.jpg" alt="Rere 2" />
+      </div>
+      <div class="slide fade">
+        <img src="assets/rere3.jpg" alt="Rere 3" />
+      </div>
+      <div class="slide fade">
+        <video src="assets/Video_1.mov" controls></video>
+      </div>
+      <div class="slide fade">
+        <video src="assets/Video_2.mov" controls></video>
+      </div>
+      <div class="slide fade">
+        <video src="assets/Video.mov" controls></video>
+      </div>
+      <!-- Dots for navigation -->
+      <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
     </div>
   </div>
-
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
