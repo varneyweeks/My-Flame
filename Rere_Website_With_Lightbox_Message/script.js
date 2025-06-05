@@ -37,6 +37,7 @@ function sayYes() {
 
 function revealMessage() {
   document.getElementById('hiddenMessage').style.display = 'block';
+  document.getElementById('revealBtn').style.display = 'none';
   document.getElementById('revealHint').style.display = 'none';
   // Optionally, disable further clicks:
   document.getElementById('messageSection').style.pointerEvents = 'none';

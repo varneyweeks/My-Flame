@@ -25,10 +25,11 @@
     <button class="music-btn" onclick="toggleMusic()">🎵 Toggle Music</button>
   </div>
   
-  <div class="message-section" id="messageSection" onclick="revealMessage()">
+  <div class="message-section" id="messageSection">
     <h2>My Message to You 💌</h2>
     <p id="hiddenMessage" style="display:none;"> Love You 3000 💖 ps no hard feelings</p>
-    <span id="revealHint" style="font-size:1em; color:#fff; opacity:0.7;">Click to reveal</span>
+    <button id="revealBtn" onclick="revealMessage()" style="margin-top:10px;">Reveal Message</button>
+    <span id="revealHint" style="font-size:1em; color:#fff; opacity:0.7;">Click the button to reveal</span>
   </div>
 
   <div class="gallery-section">
